@@ -1,0 +1,121 @@
+footer{ 
+    width: 100%; /*largeur d'un élément*/
+    margin: 0; /*définit les marges d'un élément*/
+    padding: 0; /*espace intérierur d'un élément*/
+    bottom: 0; /*définit la distance entre le bord inférieur d'un élément positionné et le bord inférieur de son conteneur positionné*/
+    box-sizing: border-box; /*la largeur et la hauteur d'un élément incluent le contenu*/
+}
+
+.footer{
+    background-color: #24262b; /*définit la couleur de fond d'un élément*/
+    padding: 70px 0; /*espace intérierur d'un élément*/
+}
+
+.container{
+    max-width: 80%; /*la largeur maximale de l'élément ne dépassera pas 80% de la largeur de son conteneur parent*/
+    margin: auto; /*les marges horizontales de l'élément sont automatiquement réparties de manière égale de chaque côté*/
+}
+
+ul{
+    list-style: none; /*les éléments de liste (comme <ul> et <ol>) n'auront pas de marqueurs de liste (puce ou numéro) par défaut*/
+    margin-left: -10%; /*l'élément aura une marge négative de 10% de la largeur de son conteneur parent du côté gauche*/
+}
+
+.row{
+    display: flex; /*définit le conteneur comme un conteneur flexible, activant le modèle de mise en page Flexbox*/
+    flex-wrap: wrap; /*indique au conteneur flexible (défini avec "display: flex;") que les éléments enfants peuvent être disposés sur plusieurs lignes si nécessaire*/
+}
+
+.footer-col{
+    width: 25%; /*l'élément aura une largeur égale à 25% de la largeur de son conteneur parent*/
+    padding: 0; /*l'élément n'aura aucun espacement intérieur (padding)*/
+}
+
+.footer-col h4{
+    font-size: 18px; /*définit la taille de police de l'élément à 18 pixels*/
+    color: white; /*définit la couleur du texte de l'élément à blanc*/
+    text-transform: capitalize; /* indique que le texte à l'intérieur de l'élément sera affiché avec la première lettre de chaque mot en majuscule, et les autres lettres en minuscules*/
+    margin-bottom: 35px; /*définit la marge inférieure de l'élément à 35 pixels*/
+    font-weight: 500; /*définit l'épaisseur de la police de l'élément à 500*/
+}
+
+/*.footer-col h4::before{ /*ajoute du contenu supplémentaire, du style ou des éléments décoratifs à un élément sans modifier le contenu HTML réel*/
+    /*content: ''; /*indique que le contenu du pseudo-élément est vide*/
+    /*position: absolute; /*positionne un élément par rapport à son premier parent positionné*/
+    /*left: 0; /* positionne l'élément à la distance zéro (0) depuis le bord gauche de son conteneur positionné*/
+    /*bottom: -10px; /*positionne l'élément à 10 pixels au-dessus du bord inférieur de son conteneur positionné*/
+    /*background-color: #e91e63; /*définit la couleur de fond de l'élément à une nuance spécifique de rose-violet*/
+    /*height: 2px; /*définit la hauteur de l'élément à 2 pixels*/
+    /*box-sizing: border-box; /*indique que la taille totale de l'élément, y compris la largeur, la hauteur, le padding et la bordure, est calculée de manière à inclure ces propriétés*/
+    /*width: 50px; /*définit la largeur de l'élément à 50 pixels*/
+/*}*/
+
+.footer-col ul li:not(:last-child){ /*sélectionne tous les éléments qui ne sont pas les derniers enfants de leurs parents*/
+    margin-bottom: 10px; /*définit la marge inférieure de l'élément à 10 pixels*/
+}
+
+.footer-col ul li a{
+    font-size: 16px; /*définit la taille de police de l'élément à 16 pixels*/
+    text-transform: capitalize; /*indique que le texte à l'intérieur de l'élément sera affiché avec la première lettre de chaque mot en majuscule, et les autres lettres en minuscules*/
+    color: white; /*définit la couleur du texte de l'élément à blanc*/
+    text-decoration: none; /*indique que le texte à l'intérieur de l'élément ne doit pas avoir de décoration, telle qu'un soulignement*/
+    font-weight: 300; /*définit l'épaisseur de la police de l'élément à 300*/
+    color: #bbbbbb; /*définit la couleur du texte de l'élément à une nuance spécifique de gris*/
+    display: block; /*l'élément doit être rendu en tant que bloc*/
+    transition: all 0.3s ease; /*définit une transition pour tous les changements de propriétés CSS sur l'élément avec une durée de 0.3 secondes et une fonction de temporisation (timing function) "ease"*/
+}
+
+.footer-col ul li a:hover{ /*permet de sélectionner et de styliser un élément lorsque l'utilisateur survole cet élément avec la souris*/
+    color: white; /* la couleur du texte de l'élément spécifié sera blanche lorsque l'utilisateur survole cet élément*/
+    padding-left: 8px; /*définit la marge intérieure (padding) à gauche de l'élément à 8 pixels*/
+}
+
+.footer-col .social-links a{
+    display: inline-block; /*indique que l'élément doit être rendu en tant que bloc en ligne (inline-block)*/
+    height: 40px; /*définit la hauteur de l'élément à 40 pixels*/
+    width: 40px; /*définit la largeur de l'élément à 40 pixels*/
+    background-color: rgba(255,255,255,0.2); /*définit la couleur de fond de l'élément avec une valeur de blanc semi-transparent*/
+    margin: 0 10px 10px 0; /*définit les marges de l'élément de manière concise en utilisant la notation des quatre côtés (haut, droite, bas, gauche)*/
+    text-align: center; /*centre horizontalement le texte à l'intérieur de l'élément*/
+    line-height: 40px; /*définit la hauteur de ligne à 40 pixels pour le texte à l'intérieur de l'élément*/
+    border-radius: 50%; /*applique une bordure arrondie à l'élément, en lui donnant une forme de cercle*/
+    color: white; /*définit la couleur du texte de l'élément à blanc*/
+    transition: all 0.5s ease; /*définit une transition pour tous les changements de propriétés CSS sur l'élément avec une durée de 0.5 secondes et une fonction de temporisation (timing function) "ease"*/
+}
+
+.footer-col .social-links a:hover{ /*permet de cibler et de styliser un élément lorsque l'utilisateur le survole avec la souris*/
+    color: #24262b; /*définit la couleur du texte de l'élément à une nuance spécifique de gris foncé*/
+    background-color: white; /* définit la couleur de fond de l'élément à blanc*/
+}
+
+@media only screen and (max-width : 1070px){ /*Cette règle s'applique uniquement lorsque la largeur de l'écran est de 1070 pixels ou moins*/
+    .footer-col{
+        width: 50%; /*la largeur de l'élément sera de 50% de la largeur de son conteneur lorsque la largeur de l'écran est de 1070 pixels ou moins*/
+        margin-bottom: 30px; /* l'élément sera de 30 pixels lorsque la largeur de l'écran est de 1070 pixels ou moins*/
+    }
+}
+
+@media only screen and (max-width : 370px){ /* règle media query qui s'applique uniquement lorsque la largeur de l'écran est de 370 pixels ou moins*/
+    .footer-col{
+        width: 100%; /*la largeur de l'élément sera de 100% de la largeur de son conteneur lorsque la largeur de l'écran est de 370 pixels ou moins*/
+        margin-bottom: 30px; /*la marge inférieure de l'élément sera de 30 pixels lorsque la largeur de l'écran est de 370 pixels ou moins*/
+    }
+    .footer-col h4{
+    font-size: 18px; /* la taille de police de l'élément sera de 18 pixels lorsque la largeur de l'écran est de 370 pixels ou moins*/
+    color: white; /*la couleur du texte de l'élément sera blanche lorsque la largeur de l'écran est de 370 pixels ou moins*/
+    text-transform: capitalize; /*le texte à l'intérieur de l'élément sera transformé de manière à ce que la première lettre de chaque mot soit en majuscule, tandis que les autres lettres restent en minuscules.*/
+    margin-bottom: 35px; /* la marge inférieure de l'élément sera de 35 pixels lorsque la largeur de l'écran est de 370 pixels ou moins*/
+    font-weight: 500; /*l'épaisseur de la police de l'élément sera de 500 lorsque la largeur de l'écran est de 370 pixels ou moins*/
+}
+
+.footer-col h4::before{ /*permet d'insérer du contenu généré avant le contenu réel de l'élément sélectionné*/
+    content: ''; /* indique que vous souhaitez générer un contenu vide pour ce pseudo-élément*/
+    position: absolute; /*positionne l'élément de manière absolue par rapport à son premier ancêtre positionné, ou par rapport à l'élément contenant si aucun ancêtre n'a une position définie*/
+    left: 0; /*positionne l'élément de manière absolue par rapport à son ancêtre positionné, alignant le côté gauche de l'élément avec le côté gauche de son conteneur positionné*/
+    bottom: -10px; /*positionne l'élément de manière absolue par rapport à son ancêtre positionné et ajuste sa position vers le haut par 10 pixels par rapport à la bordure inférieure de cet ancêtre*/
+    background-color: #e91e63; /*définit la couleur de fond de l'élément à une teinte spécifique de rose*/
+    height: 2px; /*définit la hauteur de l'élément à 2 pixels*/
+    box-sizing: border-box; /*modifie la manière dont la boîte de modèle de l'élément est calculée*/
+    width: 50px; /*définit la largeur de l'élément à 50 pixels*/
+}
+}

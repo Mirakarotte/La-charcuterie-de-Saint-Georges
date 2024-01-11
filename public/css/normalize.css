@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;500;600;700;900&display=swap');  /* Importe la police Lato depuis Google Fonts */
+
+html, body {
+    margin: 0;  /* Réinitialise les marges du document à zéro */
+    padding: 0;  /* Réinitialise les espacements intérieurs du document à zéro */
+    font-family: 'Lato';  /* Définit la police par défaut du document comme Lato */
+    overflow-x: hidden;  /* Masque la barre de défilement horizontale si le contenu déborde de la largeur de la fenêtre */
+}
+
+.inner {
+    width: 80%;  /* Définit la largeur de l'élément avec la classe .inner à 80% de la largeur de son conteneur */
+    margin: auto;  /* Centre l'élément avec la classe .inner horizontalement en utilisant une marge automatique sur les côtés gauche et droit */
+}

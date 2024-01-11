@@ -1,0 +1,148 @@
+.menu {
+    background-color: #F44336;  /* Définit la couleur de fond en rouge (#F44336) */
+    color: white;  /* Définit la couleur du texte en blanc */
+    width: 100%;  /* Définit la largeur de l'élément à 100% de la largeur de son conteneur */
+    height: 66px;  /* Définit la hauteur de l'élément à 66 pixels */
+    line-height: 66px;  /* Définit la hauteur de ligne du texte à l'intérieur à 66 pixels, centrant le texte verticalement */
+}
+
+.m-left {
+    float: left;  /* Définit l'élément à flotter à gauche dans le flux de document */
+}
+
+.logo {
+    margin: 0;  /* Réinitialise les marges de l'élément à zéro */
+    padding: 0;  /* Réinitialise les espacements intérieurs de l'élément à zéro */
+    text-transform: uppercase;  /* Transforme le texte en majuscules */
+    font-weight: 900;  /* Définit l'épaisseur de la police à 900 (très gras) */
+    font-size: 35px;  /* Définit la taille de la police à 35 pixels */
+    letter-spacing: 1px;  /* Ajoute un espacement entre les caractères de 1 pixel */
+}
+
+.m-right {
+    float: right;  /* Définit l'élément à flotter à droite dans le flux de document */
+}
+
+.m-link {
+    text-decoration: none;  /* Supprime la décoration du lien par défaut (soulignement) */
+    color: white;  /* Définit la couleur du texte en blanc */
+    text-transform: uppercase;  /* Transforme le texte en majuscules */
+    font-weight: 700;  /* Définit l'épaisseur de la police à 700 (gras) */
+    padding: 0;  /* Réinitialise les espacements intérieurs de l'élément à zéro */
+    margin: 0 15px;  /* Définit des marges à gauche et à droite de 15 pixels */
+    transition: all 0.3s ease-in-out;  /* Ajoute une transition de 0.3 secondes avec une accélération et un ralentissement */
+    border-bottom: 2px solid transparent;  /* Ajoute une bordure inférieure de 2 pixels avec une couleur transparente */
+    padding-bottom: 3px;  /* Ajoute un espacement supplémentaire en bas de 3 pixels */
+}
+
+.m-link:hover {
+    border-color: white;  /* Modifie la couleur de la bordure inférieure en blanc au survol du lien */
+}
+
+.m-link i {
+    margin-right: 5px;  /* Ajoute une marge à droite de l'icône de 5 pixels */
+}
+
+.m-nav-toggle {
+    float: right;  /* Définit l'élément à flotter à droite dans le flux de document */
+    width: 40px;  /* Définit la largeur de l'élément à 40 pixels */
+    height: 66px;  /* Définit la hauteur de l'élément à 66 pixels */
+    display: none;  /* Masque initialement l'élément */
+    align-items: center;  /* Centre les éléments enfants verticalement */
+    cursor: pointer;  /* Définit le curseur de la souris comme un pointeur */
+}
+
+.m-toggle-icons,
+.m-toggle-icons::before,
+.m-toggle-icons::after {
+    content: "";  /* Ajoute du contenu généré pour les éléments avant et après */
+    display: block;  /* Affiche les éléments en tant que blocs */
+    width: 100%;  /* Définit la largeur à 100% de la largeur de leur conteneur */
+    height: 3px;  /* Définit la hauteur à 3 pixels */
+    background-color: white;  /* Définit la couleur de fond à blanc */
+    position: relative;  /* Positionne les éléments par rapport à leur position normale */
+    transition: all 0.3s ease-in-out;  /* Ajoute une transition de 0.3 seconde avec une accélération et un ralentissement */
+}
+
+span.m-toggle-icons::before {
+    top: 12px;  /* Déplace le pseudo-élément before vers le bas de 12 pixels */
+}
+
+span.m-toggle-icons::after {
+    top: -14px;  /* Déplace le pseudo-élément after vers le haut de 14 pixels */
+}
+
+.m-right.is-open {
+    transform: translateX(0);  /* Applique une translation horizontale de 0 pixels lorsque la classe is-open est présente */
+}
+
+.m-nav-toggle.is-open span.m-toggle-icons {
+    background: transparent;  /* Définit le fond du pseudo-élément span.m-toggle-icons comme transparent lorsque la classe is-open est présente */
+}
+
+.m-nav-toggle.is-open span.m-toggle-icons::before,
+.m-nav-toggle.is-open span.m-toggle-icons::after {
+    transform-origin: center;  /* Définit le point d'origine de la transformation au centre */
+    transform: rotate(45deg);  /* Fait tourner les pseudo-éléments before et after de 45 degrés */
+    top: 0;  /* Réinitialise la position verticale des pseudo-éléments before et after à 0 */
+}
+
+.m-nav-toggle.is-open span.m-toggle-icons::after {
+    position: absolute;  /* Positionne de manière absolue le pseudo-élément after */
+    transform: rotate(-45deg);  /* Fait tourner le pseudo-élément after de -45 degrés */
+}
+
+@media only screen and (max-width: 1310px) {
+    .m-right {
+        position: absolute;  /* Positionne l'élément de manière absolue */
+        top: 66px;  /* Définit la position verticale de l'élément à 66 pixels depuis le haut */
+        right: 0;  /* Définit la position horizontale de l'élément à 0 pixels depuis la droite */
+        width: 400px;  /* Définit la largeur de l'élément à 200 pixels */
+        height: 100%;  /* Définit la hauteur de l'élément à 100% de la hauteur de son conteneur */
+        background-color: #F44336;  /* Définit la couleur de fond à rouge (#F44336) */
+        transform: translateX(100%);  /* Déplace l'élément horizontalement de 100% de sa propre largeur */
+        transition: all 0.3s ease-in-out;  /* Ajoute une transition de 0.3 seconde avec une accélération et un ralentissement */
+    }
+
+    .m-link {
+        display: block;  /* Affiche les liens comme des blocs */
+        text-align: center;  /* Centre le texte à l'intérieur des liens */
+        padding: 0;  /* Réinitialise les espacements intérieurs des liens à zéro */
+        margin: 0 20px;  /* Définit des marges à gauche et à droite des liens à 20 pixels */
+        height: 55px;  /* Définit la hauteur des liens à 55 pixels */
+    }
+
+    .m-nav-toggle {
+        display: flex;  /* Affiche l'élément en tant que conteneur flex */
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .m-right {
+        position: absolute;  /* Positionne l'élément de manière absolue */
+        top: 0;  /* Définit la position verticale de l'élément à 0 pixels depuis le haut */
+        right: 0;  /* Définit la position horizontale de l'élément à 0 pixels depuis la droite */
+        left: 0;  /* Définit la position horizontale de l'élément à 0 pixels depuis la gauche */
+        width: 100%;  /* Définit la largeur de l'élément à 100% de la largeur de son conteneur */
+        height: auto;  /* Ajuste automatiquement la hauteur de l'élément en fonction de son contenu */
+        background-color: #F44336;  /* Définit la couleur de fond à rouge (#F44336) */
+        transform: translateY(-100%);  /* Déplace l'élément verticalement de -100% de sa propre hauteur */
+        transition: all 0.3s ease-in-out;  /* Ajoute une transition de 0.3 seconde avec une accélération et un ralentissement */
+    }
+
+    .m-link {
+        display: block;  /* Affiche les liens comme des blocs */
+        text-align: center;  /* Centre le texte à l'intérieur des liens */
+        padding: 0;  /* Réinitialise les espacements intérieurs des liens à zéro */
+        margin: 0 20px;  /* Définit des marges à gauche et à droite des liens à 20 pixels */
+        height: 55px;  /* Définit la hauteur des liens à 55 pixels */
+    }
+
+    .m-nav-toggle {
+        display: flex;  /* Affiche l'élément en tant que conteneur flex */
+    }
+
+    .m-right.is-open {
+        transform: translateY(0);  /* Déplace l'élément verticalement de 0 pixels lorsqu'il est ouvert */
+    }
+}

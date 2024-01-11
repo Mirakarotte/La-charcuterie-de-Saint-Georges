@@ -1,0 +1,67 @@
+.nom {
+    color: #F44336;
+}
+
+.adresse{
+    font-weight: 900;
+}
+
+.saison{
+    font-weight: 700;
+}
+
+.horaire{
+    font-weight: 500;
+}
+
+.contact {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #F44336;
+    background-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0)
+    );
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+.contact:hover {
+    background-color: #e1382c;
+}
+  
+.contact:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+img{
+    width: 50%;
+}
+
+main {
+    text-align: center;
+    top: 66px;  /* Définit la position verticale de l'élément main à 66 pixels depuis le haut */
+    /*background-image: url("../img/background.jpg");  /* Définit une image d'arrière-plan pour l'élément main */
+    width: 100%; /*largeur d'un élément*/
+    margin: 0; /*définit les marges d'un élément*/
+    padding-bottom: 30px; /*espace intérierur d'un élément*/
+    bottom: 0; /*définit la distance entre le bord inférieur d'un élément positionné et le bord inférieur de son conteneur positionné*/
+    box-sizing: border-box; /*la largeur et la hauteur d'un élément incluent le contenu*/
+}
