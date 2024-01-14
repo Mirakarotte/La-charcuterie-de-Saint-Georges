@@ -7,7 +7,7 @@
 
     if(!empty($email) && !empty($message)){
         if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-            $reveiver = "melaniedelaunay816@gmail.com";
+            $reveiver = "lacharcuteriedesaintgeorges@yahoo.com";
             $subject = "From: $lastname <$email>?";
             $body = "Lastname: $lastname\nFirstname: $fisrtname\nEmail: $email\nPhone: $phone\n\nMessage: $message\n\nRegards,\n$name";
             $sender = "From: $email";
