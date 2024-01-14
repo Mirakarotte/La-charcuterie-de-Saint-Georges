@@ -1,29 +1,30 @@
 .menu {
-    background-color: #2ECC71;  /* Définit la couleur de fond en rouge (#F44336) */
-    color: white;  /* Définit la couleur du texte en blanc */
+    background-color: white;  /* Définit la couleur de fond en rouge (#F44336) */
+    color: #2ECC71;  /* Définit la couleur du texte en blanc */
     width: 100%;  /* Définit la largeur de l'élément à 100% de la largeur de son conteneur */
     height: 66px;  /* Définit la hauteur de l'élément à 66 pixels */
     line-height: 66px;  /* Définit la hauteur de ligne du texte à l'intérieur à 66 pixels, centrant le texte verticalement */
 }
 
 .m-left {
+    position: absolute;
     float: left;  /* Définit l'élément à flotter à gauche dans le flux de document */
-    margin-right: -5%;
 }
 
 .logo {
+    width: 8%;
     margin: 0;  /* Réinitialise les marges de l'élément à zéro */
     padding: 0;  /* Réinitialise les espacements intérieurs de l'élément à zéro */
-    width: 10%;
 }
 
 .m-right {
+    position: relative;
     float: right;  /* Définit l'élément à flotter à droite dans le flux de document */
 }
 
 .m-link {
     text-decoration: none;  /* Supprime la décoration du lien par défaut (soulignement) */
-    color: white;  /* Définit la couleur du texte en blanc */
+    color: #2ECC71;  /* Définit la couleur du texte en blanc */
     text-transform: uppercase;  /* Transforme le texte en majuscules */
     font-weight: 700;  /* Définit l'épaisseur de la police à 700 (gras) */
     padding: 0;  /* Réinitialise les espacements intérieurs de l'élément à zéro */
@@ -34,7 +35,7 @@
 }
 
 .m-link:hover {
-    border-color: white;  /* Modifie la couleur de la bordure inférieure en blanc au survol du lien */
+    border-color: #2ECC71;  /* Modifie la couleur de la bordure inférieure en blanc au survol du lien */
 }
 
 .m-link i {

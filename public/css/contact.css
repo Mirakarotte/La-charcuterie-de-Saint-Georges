@@ -7,7 +7,7 @@
 .wrapper{
     width: 720px;
     background-color: white;
-    border: 1px solid #bfbfbf;
+    border: 1px solid #2ECC71;
     border-radius: 5px;
 }
 
@@ -15,7 +15,7 @@
     font-size: 22px;
     font-weight: 600;
     padding: 20px 30px;
-    border-bottom: 1px solid #bfbfbf;
+    border-bottom: 1px solid #2ECC71;
 }
 
 .wrapper form{
@@ -48,7 +48,7 @@ form .message textarea{
 
 form .field input::placeholder, 
 form .message textarea::placeholder{
-    color: #bfbfbf;
+    color: #2ECC71;
 }
 
 form .field input:focus,
@@ -60,7 +60,7 @@ form .message textarea:focus{
     position: absolute;
     left: 18px;
     top: 50%;
-    color: #bfbfbf;
+    color: #2ECC71;
     font-size: 17px;
     pointer-events: none;
     transform: translateY(-50%);

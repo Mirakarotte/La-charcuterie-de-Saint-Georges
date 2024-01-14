@@ -46,14 +46,11 @@
       inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-.img{
+.quentin{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 30px;
-}
-
-img{
-    width: 50%;
 }
 
 main {
