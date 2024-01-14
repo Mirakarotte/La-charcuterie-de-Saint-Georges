@@ -8,6 +8,7 @@
 
 .m-left {
     float: left;  /* Définit l'élément à flotter à gauche dans le flux de document */
+    margin-right: -5%;
 }
 
 .logo {
@@ -20,7 +21,6 @@
 }
 
 .m-right {
-    z-index: 1;
     float: right;  /* Définit l'élément à flotter à droite dans le flux de document */
 }
 
@@ -120,7 +120,8 @@ span.m-toggle-icons::after {
 
 @media only screen and (max-width: 370px) {
     .m-right {
-        position: absolute;  /* Positionne l'élément de manière absolue */
+        position: fixed;  /* Positionne l'élément de manière absolue */
+        z-index: 1;
         top: 0;  /* Définit la position verticale de l'élément à 0 pixels depuis le haut */
         right: 0;  /* Définit la position horizontale de l'élément à 0 pixels depuis la droite */
         left: 0;  /* Définit la position horizontale de l'élément à 0 pixels depuis la gauche */
