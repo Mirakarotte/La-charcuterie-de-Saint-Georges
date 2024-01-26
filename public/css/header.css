@@ -1,5 +1,4 @@
 .menu {
-    background-color: white;  /* Définit la couleur de fond en rouge (#F44336) */
     color: #2ECC71;  /* Définit la couleur du texte en blanc */
     width: 100%;  /* Définit la largeur de l'élément à 100% de la largeur de son conteneur */
     height: 66px;  /* Définit la hauteur de l'élément à 66 pixels */
@@ -58,7 +57,7 @@
     display: block;  /* Affiche les éléments en tant que blocs */
     width: 100%;  /* Définit la largeur à 100% de la largeur de leur conteneur */
     height: 3px;  /* Définit la hauteur à 3 pixels */
-    background-color: white;  /* Définit la couleur de fond à blanc */
+    background-color: #2ECC71;  /* Définit la couleur de fond à blanc */
     position: relative;  /* Positionne les éléments par rapport à leur position normale */
     transition: all 0.3s ease-in-out;  /* Ajoute une transition de 0.3 seconde avec une accélération et un ralentissement */
 }
@@ -93,12 +92,13 @@ span.m-toggle-icons::after {
 
 @media only screen and (max-width: 1310px) {
     .m-right {
-        position: absolute;  /* Positionne l'élément de manière absolue */
-        top: 66px;  /* Définit la position verticale de l'élément à 66 pixels depuis le haut */
+        z-index: 1;
+        position: fixed;  /* Positionne l'élément de manière absolue */
+        top: 0;  /* Définit la position verticale de l'élément à 66 pixels depuis le haut */
         right: 0;  /* Définit la position horizontale de l'élément à 0 pixels depuis la droite */
         width: 400px;  /* Définit la largeur de l'élément à 200 pixels */
         height: 100%;  /* Définit la hauteur de l'élément à 100% de la hauteur de son conteneur */
-        background-color: #2ECC71;  /* Définit la couleur de fond à rouge (#F44336) */
+        background-image: url("../img/backgroundbody.jpg");
         transform: translateX(100%);  /* Déplace l'élément horizontalement de 100% de sa propre largeur */
         transition: all 0.3s ease-in-out;  /* Ajoute une transition de 0.3 seconde avec une accélération et un ralentissement */
     }

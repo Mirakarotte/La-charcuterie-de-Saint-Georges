@@ -6,12 +6,13 @@
 
 .wrapper{
     width: 720px;
-    background-color: white;
+    background-color: rgb(241, 241, 241);
     border: 1px solid #2ECC71;
     border-radius: 5px;
 }
 
 .wrapper h1{
+    color: #F44336;
     font-size: 22px;
     font-weight: 600;
     padding: 20px 30px;
@@ -37,6 +38,7 @@ form .dbl-field{
 
 form .field input,
 form .message textarea{
+    background-color: rgb(229, 229, 229);
     height: 100%;
     width: 80%;
     outline: none;
